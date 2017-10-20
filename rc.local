@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+JETTY_VERSION=7.0.2.v20100331
+cd /usr/local
+java -cp .:servlet-api-2.5.jar:jetty-all-$JETTY_VERSION.jar HelloWorld
