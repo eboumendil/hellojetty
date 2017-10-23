@@ -19,7 +19,7 @@ public class HelloWorld extends AbstractHandler
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
         baseRequest.setHandled(true);
-        response.getWriter().println("<!DOCTYPE html><html><body style=\"background-color:powderblue;\"></body></html>");
+        response.getWriter().println("<!DOCTYPE html><html> <body style=\"background-color:powderblue;\"></body></html>");
     }
 
     public static void main(String[] args) throws Exception
